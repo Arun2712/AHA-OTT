@@ -27,8 +27,8 @@ def registration(request):
             NSPO=pfd.save(commit=False)
             NSPO.username=NSUO
             NSPO.save()
-            send_mail('Registratioon',"SUCCESSFULLY REGISTERED IN AHA",'gollavishnuyadav2@gmail.com',[NSUO.email],fail_silently=False)
-            return HttpResponse('Regsitration is Susssessfulll')
+            send_mail('Registratioon',"SUCCESSFULLY REGISTERED IN AHA",'arun20021227@gmail.com',[NSUO.email],fail_silently=False)
+            return HttpResponse('Regsitration is Susssessfull')
         else:
             return HttpResponse('Not valid')
         
